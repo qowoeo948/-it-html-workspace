@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>레이아웃</title>
+<style>
+
+/*모든 .div마다 너비 속성등을 반복해서 작업하면 효율성이 떨어지므로 
+가장 바깥쪽에 모든 div를 가둬둘 또 하나의 box를 두면 편하다.*/
+#wrapper{
+	width:700px;
+	height:600px;
+	border:5px solid black;
+	margin:auto;   /*화면 양측의 남는 공간을 양분하여, 가운데로 오게함.*/
+
+}
+
+#wrapper2{
+	overflow:hidden;
+
+}
+
+#box1{
+	background-color:red;
+		height:100px;
+		width:700px;
+	
+}
+#box2{
+	background-color:yellow;
+	width:200px;
+	height:400px;
+	float:left;
+
+}
+#box3{
+	background-color:blue;
+	width:500px;
+	height:400px;
+	float:left;
+
+}
+
+#box4{
+	background-color:green;
+	height:100px;
+	width:700px;
+	
+}
+</style>
+</head>
+<body>
+<!--
+고전적인 작업에서는 웹페이지의 레이아웃(배치)을 테이블로 작업해왔었다..
+하지만, table은 그 목적 자체가 데이터를 보여주기 위한 용도이기 때문에
+오늘날과 같이 웹표준을 중시하는 시기에는 사용하면 안된다.
+해결책) Tag중 화면을 원하는 영역으로 나누어주는 div 태그를 이용하면 된다.
+-->
+<!--div를 포함하여, 모든~~~태그는 box로 간주된다. 
+	따라서 모두 네모로 생김..이런 특징을 가리켜 box model 이라 한다.
+	-->
+<div id="wrapper">
+		<div id="box1">빨간색 영역</div>	
+	<div id="wrapper2">
+		<div id="box2">노란색 영역</div>	
+		<div id="box3">파란색 영역</div>	
+	</div>
+		<div id="box4">초록색 영역</div>
+</div>
+
+</body>
+</html>
