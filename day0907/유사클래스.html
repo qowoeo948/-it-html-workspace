@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유사클래스</title>
+    <style>
+        /* 마우스 hover했을때 노란색 배경으로 
+            css에서 누군가를 가리킬 때 사용하는 주체를 선택자라한다.
+            선택자가 될수 있는것들은 
+            1.아이디를 부여받은 태그
+            2.태그명
+            3.클래스가 적용된 태그
+        */
+
+        /*아래와 같이 특정 요소를 가리키는 방법에 있어
+            실질적 이름이나, 아이디, 클래스가 아닌 
+            요소의 현재 상태로를 이용하여 가리키는 방법을
+            유사클래스라 한다.
+            상태
+        */
+        button:hover div{
+            background:yellow;
+            width:200px;
+            height:200px;
+        }
+
+        p{
+            display: none; /*화면에서 사라지게 함*/
+            background:yellow;
+        }
+        /*div에 마우스를 올려놓으면, p태그에 하고싶은거*/
+        div:hover p{
+            dispaly:block; /*보이도록 none의 반대*/
+        }
+               
+    </style>
+</head>
+<body>
+  <button id="bt">버튼</button>  
+  <div>dddddd
+      <p>여기는 p 영역</p>
+    </div>
+
+</body>
+</html>

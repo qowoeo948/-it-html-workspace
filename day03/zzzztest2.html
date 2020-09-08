@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <meta name="Generator" content="EditPlus®">
+ <meta name="Author" content="">
+ <meta name="Keywords" content="">
+ <meta name="Description" content="">
+ <title>Document</title>
+ <style>
+#box{
+	width:100px;
+	position:absolute;
+	top:200px;
+	animation-name:move;
+	animation-duration:3s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate
+}
+#ball{
+	width:100px;
+	position:absolute;
+	top:200px;
+	animation-name:bounce;
+	animation-duration:0.5s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate
+}
+#shadow{
+	width:100px;
+	position:absolute;
+	top:600px;
+	animation-name:move;
+	animation-duration:3s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate
+
+}
+
+@keyframes move{
+	from{
+	left:0px;
+	}
+	to{
+	left:500px;
+	}
+
+}
+@keyframes bounce{
+	from{
+	top:300px;
+	}
+	to{
+	top:0px;
+	}
+
+}
+
+
+ </style>
+ </head>
+ <body>
+
+ <div id="box">
+ 	<img src="../images/ball.png" id="ball"/>
+ </div>
+  
+  <img src="../images/sh.png" id="shadow"/>
+  
+ </body>
+</html>

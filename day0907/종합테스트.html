@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+ <style>
+     #wrapper{
+        width:600px;
+       height: 600px;
+     }
+
+     #box1{
+        width:200px;
+       height: 200px;
+       border:solid green;
+      background:url(https://dogtime.com/assets/uploads/2011/03/puppy-development-1280x720.jpg);
+      background-size:200px 200px;/*width,height*/
+      float: left;
+    
+     }
+     #box2{
+        width:200px;
+       height: 200px;
+       border:solid yellow;
+      background:url(https://dogtime.com/assets/uploads/2011/03/puppy-development-1280x720.jpg);
+      background-size:200px 200px;/*width,height*/
+        transform:scaleX(-1);
+        float: left;
+     }
+
+#mask{
+            width: 200px;
+            height: 200px;
+            background:gray;
+            /*opacity 투명도*/
+        }
+        /*box에 hover시 mask의 opacity를 투명하게 처리*/
+        #box1:hover #mask{
+            opacity: 0.4; /*1: 완전 불투명 ~ 0: 완전 투명*/
+            animation:spin 1s linear forwards;
+
+        }
+        #box2:hover #mask{
+            opacity: 0.4; /*1: 완전 불투명 ~ 0: 완전 투명*/
+            animation:spin 1s linear forwards;
+
+        }
+@keyframes spin{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+
+}
+ </style>   
+</head>
+<body>
+
+    
+ <div id="wrapper">
+    <div id="box1">
+        <div id="mask"></div>    
+    </div>
+    <div id="box2">
+        <div id="mask"></div>
+    </div>
+</div>
+
+</body> 
+</html>

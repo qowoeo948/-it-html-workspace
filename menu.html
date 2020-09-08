@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+/*메뉴들을 묶어놓을 박스에 대한 클래스 정의*/
+.menu{
+	width:190px;
+	background:yellow;
+}
+/*선택자는 조합하여 사용할 수 있다. 선택자 뒤에 한칸을 띄우면 하위 요소를 가리킨다. */
+.menu a{
+	display:block;   /*인라인 속성을 block으로 전환: 너비와 높이가 가능...즉, 크기를 가질수있다.*/
+	text-decoration:none; /*밑줄 없애기*/
+	background-color:#c0c0c0;
+	color:#000000;
+	/*a태그를 이루는 박스와, 그 안에 있는 글씨가 즉, 내용물이 너무 붙었다..좀 간격을 두자*/
+	padding:10px;
+}
+/*유사클래스를 이용하여 링크태그에 마우스 올려놓으면 배경색 바꾸기*/
+.menu a:hover{
+	background-color:#cccccc;
+	
+}
+/*a 태그에 적용된 클래스*/
+.menu a.active{
+	background-color:#4caf50;
+	color:#FFFFFF;
+}
+
+
+</style>
+</head>
+<body>
+	<div class="menu">
+	<a href="#" class="active">1일차</a>
+		<a href="./day01/dummy.html" target="myframe">dummy</a>
+		<a href="./day01/memo.html" target="myframe">memo</a>
+		<a href="./day01/게시판.html" target="myframe">게시판</a>
+		<a href="./day01/로그인폼.html" target="myframe">로그인폼</a>
+		<a href="./day01/셀합치기.html" target="myframe">셀합치기</a>
+		<a href="./day01/테이블기초.html" target="myframe">테이블기초</a>
+	</div>
+
+	<div class="menu">
+	<a href="#" class="active">2일차</a>
+		<a href="./day02/block의이해.html" target="myframe">block의이해</a>
+		<a href="./day02/Border학습.html" target="myframe">Border학습</a>
+		<a href="./day02/css색상.html" target="myframe">css색상</a>
+		<a href="./day02/pro1.html" target="myframe">pro1</a>
+		<a href="./day02/pro1풀이.html" target="myframe">pro1풀이</a>
+		<a href="./day02/pro2.html" target="myframe">pro2</a>
+		<a href="./day02/test.html" target="myframe">test</a>
+		<a href="./day02/레이아웃.html" target="myframe">레이아웃</a>
+		<a href="./day02/배경처리.html" target="myframe">배경처리</a>
+		<a href="./day02/위치속성.html" target="myframe">위치속성</a>
+		<a href="./day02/회원가입폼.html" target="myframe">회원가입폼</a>
+
+	</div>
+
+	
+
+	<div class="menu">
+		<a href="#" class="active">3일차</a>
+		<a href="./day03/레이아웃.html" target="myframe">레이아웃 학습</a>
+		<a href="./day03/인라인블럭.html" target="myframe">inline-block</a>
+		<a href="./day03/박스모델.html" target="myframe">Box모델</a>
+		<a href="./day03/트랜지션.html" target="myframe">Transition(전이,변화)</a>
+		<a href="./day03/동영상.html" target="myframe">동영상제어</a>
+		<a href="./day03/에니메이션.html" target="myframe">에니메이션</a>
+		<a href="./day03/변형.html" target="myframe">Transform(변형)</a>
+		<a href="./day03/공튕기기.html" target="myframe">공튕기기</a>
+	</div>
+
+	<div class="menu">
+		<a href="#" class="active">day0907</a>
+		<a href="./day0907/box사이징.html" target="myframe">box사이징</a>
+		<a href="./day0907/로딩바.html" target="myframe">로딩바</a>
+		<a href="./day0907/유사엘리먼트.html" target="myframe">유사엘리먼트</a>
+		<a href="./day0907/유사클래스.html" target="myframe">유사클래스</a>
+		<a href="./day0907/이미지filp.html" target="myframe">이미지filp</a>
+		<a href="./day0907/종합테스트.html" target="myframe">종합테스트</a>
+		<a href="./day0907/투명도.html" target="myframe">투명도</a>
+		<a href="./day0907/화살표표현하기.html" target="myframe">화살표표현하기</a>
+	</div>
+
+	<div class="menu">
+		<a href="#" class="active">day0908</a>
+			<a href="./day0908/종합문제.html" target="myframe">종합문제</a>
+			<a href="./day0908/종합문제풀이.html" target="myframe">종합문제풀이</a>
+			
+		</div>
+
+
+
+
+</body>
+</html>

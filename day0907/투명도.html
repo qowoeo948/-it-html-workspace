@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>투명도</title>
+    <style>
+        #box{
+            width:200px;
+            height: 200px;
+            background:url(https://static.scientificamerican.com/sciam/cache/file/D059BC4A-CCF3-4495-849ABBAFAED10456_source.jpg?w=590&h=800&526ED1E1-34FF-4472-B348B8B4769AB2A1);
+            background-size:200px 200px;/*width,height*/
+            margin:auto; /*양옆 마진 가운데로 */
+        }
+
+        #mask{
+            width: 200px;
+            height: 200px;
+            background:black;
+            /*opacity 투명도*/
+        }
+        /*box에 hover시 mask의 opacity를 투명하게 처리*/
+        #box:hover #mask{
+            opacity: 0.4; /*1: 완전 불투명 ~ 0: 완전 투명*/
+
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- 이미지 배경을 가진 박스 -->
+    <div id="box">
+        <!-- 이미지를 가릴 마스크 -->
+    <div id="mask"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+#box{
+	width:100px;
+	position:absolute; /*부모 요소를 기준으로 나의 위치를 결정하는 방법:여기서 부모는 body*/
+	top:50px;
+	/*이 CSS가 사용하게 될 에니메이션 프레임 이름 */
+	animation-name:move;
+	animation-duration:3s;
+	animation-iteration-count:infinite; /*실행횟수*/
+	animation-direction:alternate; /*반복방식을 번갈아가면서 하도록*/
+}
+#ball{
+	width:100px;
+	position:absolute;
+	top:50px;
+	animation-name:bounce;
+	animation-duration:0.3s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+}
+#shadow{
+width:100px;
+position:absolute;
+top:500px;
+background:#808080;
+animation-name:size;
+animation-duration:0.3s;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+
+}
+#shadowWrapper{
+width:100px;
+position:absolute;
+top:50px;
+animation-name:move;
+animation-duration:3s;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+
+}
+
+@keyframes move{
+	from{
+	left:0px;
+	}
+	to{
+	left:600px;
+	}
+}
+@keyframes bounce{
+	from{
+	top:300px;
+	}
+	to{
+	top:0px;
+	}
+}
+@keyframes size{
+	from{
+	width:200px;
+	height:50px;
+	}
+	to{
+	width:80px;
+	height:100px;
+	}
+}
+
+</style>
+
+
+</head>
+<body>
+
+	<div id="box">
+	<img src="../images/ball.png" id="ball"/>
+	</div>
+	
+<div id="shadowWrapper">
+		<img src="../images/sh.png" id="shadow"/>
+	</div>
+	
+
+</body>
+</html>
